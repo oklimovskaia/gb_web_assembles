@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datetime superapp</title>
+    <script type="module" src="js/main.js"></script>
+    <script src="js/howler.js"></script>
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+
+
+    <div class="tabs">
+        <div class="tabs__nav">
+            <a class="tabs__link tabs__link_active" href="#content-1">Калькулятор дат</a>
+            <a class="tabs__link" href="#content-2">Таймер</a>
+
+        </div>
+        <div class="tabs__content">
+            <div class="tabs__pane tabs__pane_show" id="content-1">
+                <form id="dateCalc">
+                    <p>Для расчета промежутка необходимо заполнить оба поля</p>
+                    <label for="firstDate">
+                        <strong>Первая дата:</strong>
+                        <input name="firstDate" type="date"></input>
+                    </label>
+
+                    <label for="secondDate">
+                        <strong>Вторая дата</strong>
+                        <input name="secondDate" type="date"></input>
+                    </label>
+
+                    <button id="calc" type="submit">Расчитать промежуток</button>
+
+
+                </form>
+            </div>
+            <div class="tabs__pane" id="content-2">
+                <div id="form_timer">
+                    <p>Введите число секунд и нажмите на кнопку "Старт"</p>
+                    <input type="number" id="time"></input>
+
+                    <button id="start_timer">Запустить</button>
+                    <button id="stop_timer">Стоп</button>
+
+                </div>
+
+            </div>
+
+        </div>
+        <p id="output"></p>
+    </div>
+
+
+
+</body>
+
+</html>
